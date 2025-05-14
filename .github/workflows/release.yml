@@ -29,16 +29,18 @@ jobs:
         id: set-workflow
         run: |
           # Get version from package.json
+          VERSION=$(node -e "console.log(require('./package.json').version);")
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
 
           # Set workflow type and environment based on trigger
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "workflow_type=release" >> $GITHUB_OUTPUT
             echo "environment=production" >> $GITHUB_OUTPUT
-            echo "Running release workflow"
+            echo "Running release workflow v${VERSION}"
           else
             echo "workflow_type=development" >> $GITHUB_OUTPUT
             echo "environment=development" >> $GITHUB_OUTPUT
-            echo "Running development workflow"
+            echo "Running development workflow v${VERSION}"
           fi
 
   init_dependencies:
