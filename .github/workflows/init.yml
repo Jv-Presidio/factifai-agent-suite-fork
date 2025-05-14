@@ -11,7 +11,7 @@ on:
         type: string
 
 jobs:
-  init_frontend:
+  init_node_modules:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -29,7 +29,6 @@ jobs:
           run_install: false
 
       - name: Initialize Package Dependencies
-        working-directory: ui
         run: |
           pnpm --filter "./packages/*" install
 
