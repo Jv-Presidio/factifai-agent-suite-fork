@@ -4,7 +4,7 @@
   "name": "@todoroki-jv-test/fa-testt",
   "license": "MIT",
   "homepage": "https://factifai.io",
-  "version": "1.0.104",
+  "version": "1.0.105",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
