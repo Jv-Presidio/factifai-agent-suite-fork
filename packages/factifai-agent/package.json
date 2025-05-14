@@ -1,10 +1,10 @@
 {
   "description": "An AI powered browser automation testing agent powered by LLMs.",
   "author": "PRESIDIO®",
-  "name": "@presidio-dev/factifai-agent",
+  "name": "@todoroki-jv-test/fa-testt",
   "license": "MIT",
   "homepage": "https://factifai.io",
-  "version": "1.0.3",
+  "version": "1.0.104",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -29,7 +29,7 @@
     "@langchain/core": "^0.3.55",
     "@langchain/langgraph": "^0.2.72",
     "@langchain/openai": "^0.5.10",
-    "@presidio-dev/playwright-core": "workspace:*",
+    "@todoroki-jv-test/pc-testt": "workspace:*",
     "boxen": "^8.0.1",
     "chalk": "^5.4.1",
     "dotenv": "^16.5.0",
