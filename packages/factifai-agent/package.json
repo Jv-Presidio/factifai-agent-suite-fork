@@ -9,7 +9,7 @@
   "types": "dist/index.d.ts",
   "bin": {
     "factifai-agent": "./dist/cli.js"
-  },
+  }, 
   "files": [
     "dist"
   ],
