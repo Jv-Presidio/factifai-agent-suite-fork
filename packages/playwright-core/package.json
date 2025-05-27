@@ -9,7 +9,7 @@
   ],
   "publishConfig": {
     "access": "public"
-  },
+  }, 
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "node esbuild.config.js && tsc --emitDeclarationOnly",
